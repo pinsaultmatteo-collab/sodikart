@@ -1,0 +1,58 @@
+<!-- title: Demander un devis en 3 étapes | SODIKART -->
+<!-- desc: Exploitant, porteur de projet, pilote ou revendeur : trois questions, un expert dédié, une réponse sous 48 h ouvrées. -->
+<!-- scripts: <script src="assets/js/pages.js"></script> -->
+<section class="section" style="padding-top:calc(var(--nav-h) + 56px);background:radial-gradient(ellipse at 80% 0%,rgba(255,82,32,.22),transparent 55%),#0a0a0c">
+  <div class="container">
+    <div class="grid" style="align-items:start">
+      <div class="col-5" data-reveal="left">
+        <div class="phero__crumb"><a href="index.html">Accueil</a><i></i><span>Devis</span></div>
+        <span class="eyebrow">Devis en 3 étapes</span>
+        <h1 class="h1 mt-2">Parlons de<br>votre <span class="u-orange">projet.</span></h1>
+        <p class="lead">Trois questions pour vous orienter vers le bon expert : exploitant, porteur de projet, pilote, revendeur. Réponse sous 48 h ouvrées. Aucun prix n'est affiché en ligne : chaque flotte, chaque circuit et chaque châssis mérite une proposition sur mesure.</p>
+        <ul class="door__list mt-3" style="max-height:none;opacity:1"><li>Un expert de votre zone, dans votre langue</li><li>Devis pré-rempli si vous venez d'une fiche kart</li><li>Rappel téléphonique sur demande</li></ul>
+        <div class="mt-4 quote">« Le kart qui rapporte : fiable, sûr, rentable, soutenu partout dans le monde en J+1. »<cite>Promesse aux exploitants</cite></div>
+        <p class="footer__addr mt-4"><b>SODIKART</b> · PA Pan Loup Cap · 21 rue José Soriano · 44800 Saint-Herblain · France</p>
+      </div>
+      <div class="col-7" data-reveal="right">
+        <div class="form-card" id="devis">
+          <div class="stepper"><div class="is-on" data-step-i="0"><b>01</b>Votre profil</div><div data-step-i="1"><b>02</b>Votre besoin</div><div data-step-i="2"><b>03</b>Vos coordonnées</div></div>
+          <form id="devis-form" novalidate>
+            <div class="f-step is-on" data-step="0">
+              <h3 class="h3" style="color:var(--ink)">Qui êtes-vous ?</h3>
+              <div class="choice-grid mt-2" id="profils">
+                <label class="choice"><input type="radio" name="profil" value="exploitant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M10 20v-6h4v6"/></svg><b>Exploitant</b><span>J'exploite déjà un circuit</span></label>
+                <label class="choice"><input type="radio" name="profil" value="projet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19l6-6 4 4 6-8"/><path d="M14 9h6v6"/></svg><b>Porteur de projet</b><span>Je crée un circuit</span></label>
+                <label class="choice"><input type="radio" name="profil" value="pilote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Pilote · team</b><span>Je cours en compétition</span></label>
+                <label class="choice"><input type="radio" name="profil" value="revendeur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l2-5h14l2 5M4 10v10h16V10"/><path d="M9 20v-6h6v6"/></svg><b>Revendeur</b><span>Je distribue ou importe</span></label>
+              </div>
+              <div class="f-row mt-2"><div class="f-field"><label>Pays</label><select name="pays"><option>France</option><option>Belgique</option><option>Suisse</option><option>Royaume-Uni</option><option>Allemagne</option><option>Espagne</option><option>Italie</option><option>États-Unis</option><option>Canada</option><option>Mexique</option><option>Émirats arabes unis</option><option>Thaïlande</option><option>Australie</option><option>Autre</option></select></div><div class="f-field"><label>Langue souhaitée</label><select name="langue"><option>Français</option><option>English</option><option>Deutsch</option><option>Español</option><option>Italiano</option><option>中文</option><option>Русский</option></select></div></div>
+            </div>
+            <div class="f-step" data-step="1">
+              <h3 class="h3" style="color:var(--ink)">De quoi avez-vous besoin ?</h3>
+              <div class="choice-grid mt-2" id="besoins" style="grid-template-columns:repeat(3,1fr)">
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Flotte de karts de location"><b>Flotte de karts</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Karts électriques"><b>Karts électriques</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Création de circuit clés en main"><b>Circuit clés en main</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Châssis de compétition"><b>Châssis racing</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Pièces et équipements"><b>Pièces &amp; équipements</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Occasion Sodi Restart"><b>Sodi Restart</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Chronométrage et logiciels"><b>Chrono &amp; logiciels</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Service client et formation"><b>Service &amp; formation</b></label>
+                <label class="choice choice--chip"><input type="checkbox" name="besoin" value="Devenir revendeur"><b>Devenir revendeur</b></label>
+              </div>
+              <div class="f-row mt-2"><div class="f-field"><label>Modèle(s) envisagé(s)</label><input type="text" name="kart" placeholder="Ex. SR6, RSX2, Sigma KZ"></div><div class="f-field"><label>Nombre de karts</label><select name="nb"><option>Je ne sais pas encore</option><option>1 à 5</option><option>6 à 15</option><option>16 à 30</option><option>Plus de 30</option></select></div><div class="f-field full"><label>Votre projet en quelques mots</label><textarea name="msg" placeholder="Surface, type de piste, calendrier, budget indicatif…"></textarea></div></div>
+            </div>
+            <div class="f-step" data-step="2">
+              <h3 class="h3" style="color:var(--ink)">Comment vous joindre ?</h3>
+              <div class="f-row mt-2"><div class="f-field"><label>Prénom et nom</label><input type="text" name="nom" placeholder="Votre nom" required></div><div class="f-field"><label>Société · circuit</label><input type="text" name="societe" placeholder="Nom de la structure"></div><div class="f-field"><label>E-mail</label><input type="email" name="email" placeholder="vous@entreprise.com" required></div><div class="f-field"><label>Téléphone</label><input type="tel" name="tel" placeholder="+33 …"></div></div>
+              <label class="choice choice--chip mt-2" style="display:inline-flex"><input type="checkbox" name="rappel" value="1"><b>Être rappelé par un expert</b><span>sous 48 h ouvrées</span></label>
+              <div class="summary mt-2" id="devis-summary"></div>
+            </div>
+            <div class="f-actions"><button type="button" class="btn btn--ghost btn--sm" id="devis-prev" style="visibility:hidden">Précédent</button><span class="hud" style="color:#7a7a85" id="devis-hint">Étape 1 sur 3</span><button type="button" class="btn btn--primary" id="devis-next">Continuer <svg class="btn__arrow"><use href="#i-arrow"/></svg></button></div>
+          </form>
+          <div class="success" id="devis-success" hidden><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg></div><h3 class="h3" style="color:var(--ink)">Demande transmise.</h3><p class="mt-1" style="color:#4a4a54">Un expert Sodikart de votre zone vous répond sous 48 h ouvrées. Démonstration : aucune donnée n'a été envoyée.</p><div class="btn-row mt-3" style="justify-content:center"><a href="index.html" class="btn btn--ink btn--sm">Retour à l'accueil</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

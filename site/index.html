@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SODIKART — Le constructeur qui fait rouler le karting mondial</title>
+<meta name="description" content="SODIKART, premier constructeur mondial de karts : karts de location pour les exploitants de circuits, châssis de compétition champions du monde FIA KZ 2024 et 2025, Sodi World Series. Fabriqué à Saint-Herblain depuis 1981.">
+<link rel="icon" href="assets/logo/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&family=Saira+Extra+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- SPRITE:START -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2c4 4 5 9 0 14-5-5-4-10 0-14z" fill="currentColor"/></symbol>
+    <linearGradient id="sl-grad" x1="0" x2="1"><stop offset="0" stop-color="#ff5220" stop-opacity="0"/><stop offset=".5" stop-color="#ff7a4d" stop-opacity=".9"/><stop offset="1" stop-color="#ff5220" stop-opacity="0"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- SPRITE:END -->
+<!-- LOADER:START -->
+<div class="loader" aria-hidden="true">
+  <img class="loader__logo" src="assets/logo/sodikart-logo-white.svg" alt="">
+  <div class="loader__lights"><span class="loader__light"></span><span class="loader__light"></span><span class="loader__light"></span><span class="loader__light"></span><span class="loader__light"></span></div>
+  <div class="loader__label">Grille de départ</div>
+</div>
+<!-- LOADER:END -->
+
+<!-- NAV:START -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="SODIKART — accueil"><img src="assets/logo/sodikart-logo-white.svg" alt="SODIKART"></a>
+    <nav aria-label="Navigation principale" class="hide-mobile" style="height:100%">
+      <ul class="nav__menu">
+        <li class="has-mega">
+          <a href="karts-location.html" class="nav__link">Karts de location <svg><use href="#i-chev"/></svg></a>
+          <div class="mega"><div class="container mega__grid">
+            <div class="mega__col">
+              <div class="mega__title">Karts de location<br><span class="u-orange">SODI</span></div>
+              <p class="mega__desc">Les meilleurs karts de location du monde, réservés aux exploitants professionnels. Thermique ou 100 % électrique, dès 3 ans.</p>
+              <a class="link" href="karts-location.html">Toute la gamme <svg><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="mega__col"><h5>Par usage</h5><ul>
+              <li><a href="karts-location.html#adultes">Adultes · SR6, RT10, Sport <span class="tag">5 modèles</span></a></li>
+              <li><a href="karts-location.html#electrique">Électrique · RSX2, LRX2, X2Drive <span class="tag tag--teal">ENGEC</span></a></li>
+              <li><a href="karts-location.html#juniors">Juniors &amp; kids · dès 3 ans</a></li>
+              <li><a href="karts-location.html#biplaces">Biplaces · familles &amp; PMR</a></li>
+              <li><a href="karts-location.html#restart">Occasion reconditionnée · Sodi Restart <span class="tag tag--orange">Nouveau</span></a></li>
+            </ul></div>
+            <div class="mega__col"><h5>Outils &amp; technologies</h5><ul>
+              <li><a href="karts-location.html#comparateur">Comparateur 3 karts</a></li>
+              <li><a href="karts-location.html#mystudio">Configurateur My Studio</a></li>
+              <li><a href="karts-location.html#technologies">82 technologies documentées</a></li>
+              <li><a href="karts-location.html#securite">Sécurité &amp; crash-tests UTAC</a></li>
+            </ul></div>
+            <a class="mega__kart" href="karts-location.html#sr6"><span class="hud">Nouveauté 2026</span><strong>SR6 — Le kart nouvelle génération</strong><img src="assets/img/karts/sr6.webp" alt="SODI SR6" loading="lazy"></a>
+          </div></div>
+        </li>
+        <li class="has-mega">
+          <a href="solutions-circuits.html" class="nav__link">Solutions circuits <svg><use href="#i-chev"/></svg></a>
+          <div class="mega"><div class="container mega__grid">
+            <div class="mega__col">
+              <div class="mega__title">Solutions pour<br><span class="u-orange">les circuits</span></div>
+              <p class="mega__desc">Un seul interlocuteur de l'idée à l'ouverture, puis chaque jour d'exploitation : flotte, pièces, chronométrage, formation, service J+1.</p>
+              <a class="link" href="solutions-circuits.html">Découvrir <svg><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="mega__col"><h5>Votre projet</h5><ul>
+              <li><a href="solutions-circuits.html#ouvrir">Ouvrir un circuit · 15 étapes</a></li>
+              <li><a href="solutions-circuits.html#flotte">Équiper ou renouveler ma flotte</a></li>
+              <li><a href="solutions-circuits.html#pieces">Pièces &amp; équipements · ITAKAshop</a></li>
+              <li><a href="solutions-circuits.html#logiciels">Chronométrage, logiciels, gamification</a></li>
+              <li><a href="solutions-circuits.html#service">Service client &amp; formation</a></li>
+            </ul></div>
+            <div class="mega__col"><h5>Outils</h5><ul>
+              <li><a href="solutions-circuits.html#simulateur">Simulateur de rentabilité <span class="tag tag--orange">Interactif</span></a></li>
+              <li><a href="solutions-circuits.html#guide">Guide « Ouvrir un circuit »</a></li>
+              <li><a href="devis.html">Demander un devis en 3 étapes</a></li>
+            </ul></div>
+            <a class="mega__kart" href="solutions-circuits.html#ouvrir"><span class="hud">Clés en main</span><strong>De l'idée à l'ouverture</strong><img src="assets/img/photos/inv-track.webp" alt="Circuit indoor SODI" loading="lazy" style="object-fit:cover;border-radius:4px;margin-top:12px"></a>
+          </div></div>
+        </li>
+        <li><a href="competition.html" class="nav__link">Compétition</a></li>
+        <li><a href="communaute.html" class="nav__link">Communauté</a></li>
+        <li><a href="groupe.html" class="nav__link">Groupe</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <a href="#" class="nav__client hide-mobile"><svg><use href="#i-lock"/></svg> Espace client</a>
+      <button class="nav__lang hide-mobile" aria-label="Changer de langue">FR <svg><use href="#i-chev"/></svg></button>
+      <a href="devis.html" class="btn btn--primary btn--sm hide-mobile">Demander un devis</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a class="big" href="karts-location.html">Karts de location <span>SODI</span></a>
+  <a class="big" href="solutions-circuits.html">Solutions circuits</a>
+  <a class="big" href="competition.html">Compétition <span>SODI Racing</span></a>
+  <a class="big" href="communaute.html">Communauté <span>SWS</span></a>
+  <a class="big" href="groupe.html">Groupe</a>
+  <a class="btn btn--primary" href="devis.html">Demander un devis</a>
+  <p class="hud mt-3">FR · EN · DE · ES · IT · ZH · RU</p>
+</div>
+<!-- NAV:END -->
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__bg"><img src="assets/img/photos/constructeur-ksp.webp" alt="Course de karts SODI de nuit" fetchpriority="high"></div>
+  <div class="hero__overlay"></div>
+  <svg class="speedlines" id="speedlines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="container hero__content">
+    <div class="hero__eyebrow">
+      <span class="hero__badge"><i class="dot"></i> Champion du monde FIA KZ 2024 · 2025</span>
+      <span class="hud" style="color:#fff;opacity:.8">N°1 mondial du kart · Saint-Herblain, France · depuis 1981</span>
+    </div>
+    <h1 class="h-display hero__title" id="hero-title">
+      <span class="line"><span>Le constructeur</span></span>
+      <span class="line"><span>qui fait rouler</span></span>
+      <span class="line"><span>le karting <em>mondial.</em></span></span>
+    </h1>
+    <p class="hero__sub" id="hero-sub">De la première piste indoor au titre de champion du monde : Sodikart conçoit, fabrique à Saint-Herblain et fait vivre les karts de location et de compétition qui font rouler 150 000 pilotes sur 760 pistes dans plus de 70 pays.</p>
+    <div class="hero__ctas" id="hero-ctas">
+      <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis <svg class="btn__arrow"><use href="#i-arrow"/></svg></a>
+      <a href="#gamme" class="btn btn--ghost btn--lg">Explorer la gamme 2026</a>
+    </div>
+  </div>
+  <div class="hero__side"><div class="hero__scroll"><i></i> Tour de chauffe</div></div>
+  <div class="hero__stats">
+    <div class="container">
+      <div class="stat"><div class="stat__num"><span data-count="45">0</span><small>ans</small></div><div class="stat__label">d'avance · fondé en 1981</div></div>
+      <div class="stat"><div class="stat__num"><span data-count="760">0</span></div><div class="stat__label">pistes partenaires SWS · 70+ pays</div></div>
+      <div class="stat"><div class="stat__num"><span data-count="150000">0</span></div><div class="stat__label">pilotes classés Sodi World Series</div></div>
+      <div class="stat"><div class="stat__num"><span data-count="75">0</span><small>%</small></div><div class="stat__label">du chiffre d'affaires à l'export</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee">
+  <span class="marquee__item"><i></i>N°1 mondial du kart</span><span class="marquee__item"><i></i>Champion du monde FIA KZ 2024 &amp; 2025</span><span class="marquee__item"><i></i>Fabriqué à Saint-Herblain</span><span class="marquee__item"><i></i>760 pistes · 70 pays</span><span class="marquee__item"><i></i>Premier constructeur crash-testé UTAC</span><span class="marquee__item"><i></i>Importateur Rotax depuis 1988</span><span class="marquee__item"><i></i>150 000 pilotes SWS</span><span class="marquee__item"><i></i>Objectif 150 M€ en 2030</span>
+</div></div>
+
+<!-- ============ 3 PORTES D'ENTRÉE ============ -->
+<section class="section section--tight" id="profils">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>01</b> — Par où commencer</div><h2 class="h2">Trois façons<br>de rouler <span class="u-orange">SODI.</span></h2></div>
+      <p class="lead">Exploitant, porteur de projet ou pilote : chaque parcours a son interlocuteur, ses preuves et un seul appel à l'action. Dites-nous qui vous êtes, on s'occupe du reste.</p>
+    </div>
+  </div>
+  <div class="doors" data-stagger=".12">
+    <a class="door" href="solutions-circuits.html#flotte">
+      <div class="door__img"><img src="assets/img/photos/constructeur-foto.webp" alt="Grille de départ de karts de location SODI" loading="lazy"></div>
+      <span class="door__num">01</span><span class="door__arrow"><svg><use href="#i-arrow"/></svg></span>
+      <div class="door__body">
+        <div class="door__eyebrow">J'exploite un circuit</div>
+        <h3 class="door__title">Le kart<br>qui rapporte.</h3>
+        <p class="door__claim">Fiable, sûr, rentable, soutenu partout dans le monde en J+1.</p>
+        <ul class="door__list"><li>Moteurs Honda GX 4 temps, versions GPL, compteurs d'heures</li><li>10 000 pièces en stock, livrées en J+1</li><li>Flotte neuve ou reconditionnée Sodi Restart</li></ul>
+        <span class="door__cta">Équiper ma flotte <svg><use href="#i-arrow"/></svg></span>
+      </div>
+    </a>
+    <a class="door" href="solutions-circuits.html#ouvrir">
+      <div class="door__img"><img src="assets/img/photos/inv-track.webp" alt="Piste de karting indoor" loading="lazy"></div>
+      <span class="door__num">02</span><span class="door__arrow"><svg><use href="#i-arrow"/></svg></span>
+      <div class="door__body">
+        <div class="door__eyebrow">Je crée un circuit</div>
+        <h3 class="door__title">De l'idée<br>à l'ouverture.</h3>
+        <p class="door__claim">Un seul interlocuteur, 15 étapes, des experts dans 46 pays.</p>
+        <ul class="door__list"><li>Étude de faisabilité, concept et tracé de piste</li><li>Flotte, barrières, revêtements, chronométrage Apex Timing</li><li>Formation des équipes et lancement sur les Sodi World Series</li></ul>
+        <span class="door__cta">Ouvrir un circuit <svg><use href="#i-arrow"/></svg></span>
+      </div>
+    </a>
+    <a class="door" href="competition.html">
+      <div class="door__img"><img src="assets/img/photos/3mk-ksp-23.webp" alt="Peloton de karts de compétition" loading="lazy"></div>
+      <span class="door__num">03</span><span class="door__arrow"><svg><use href="#i-arrow"/></svg></span>
+      <div class="door__body">
+        <div class="door__eyebrow">Je cours en compétition</div>
+        <h3 class="door__title">Le châssis<br>champion du monde.</h3>
+        <p class="door__claim">Du baby-kart au KZ, cinq châssis homologués CIK-FIA.</p>
+        <ul class="door__list"><li>Sigma KZ : titres mondiaux FIA KZ 2024 et 2025</li><li>Châssis officiel des Rotax Grand Finals depuis 2010</li><li>Rotax France, TEKNEEX, BOX'S, Sodi Racing School</li></ul>
+        <span class="door__cta">Voir la gamme racing <svg><use href="#i-arrow"/></svg></span>
+      </div>
+    </a>
+  </div>
+  <div class="doors-more">
+    <a href="groupe.html#revendeur">Je suis revendeur ou importateur <span>Distribuez le n°1 mondial du karting</span></a>
+    <a href="communaute.html#trouver">Je veux rouler <span>Trouver un circuit SODI près de chez moi</span></a>
+  </div>
+</section>
+
+<!-- ============ CHAÎNE DE VALEUR ============ -->
+<section class="section section--bg2" id="groupe-integre">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>02</b> — Un groupe intégré</div><h2 class="h2">Une seule chaîne de valeur,<br>du châssis au <span class="u-orange">classement mondial.</span></h2></div>
+      <p class="lead">Chaque pilier nourrit les autres : un circuit équipé en karts SODI achète ses pièces chez ITAKAshop, est suivi par le service client et recrute ses pilotes via le classement SWS. Personne d'autre ne couvre toute la boucle.</p>
+    </div>
+    <div class="chain" id="chain">
+      <div data-reveal="scale">
+        <svg class="chain__svg" viewBox="-70 20 900 500" aria-labelledby="chain-title" role="img"><title id="chain-title">Circuit des quatre métiers Sodikart</title>
+          <defs><filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+          <path class="chain__track" d="M160,100 H600 A90,90 0 0 1 690,190 V250 A90,90 0 0 1 600,340 H420 C380,340 360,400 300,400 H160 A90,90 0 0 1 70,310 V190 A90,90 0 0 1 160,100 Z"/>
+          <path class="chain__sector" data-sector="0" d="M160,100 H600"/>
+          <path class="chain__sector" data-sector="1" d="M600,100 A90,90 0 0 1 690,190 V250 A90,90 0 0 1 600,340"/>
+          <path class="chain__sector" data-sector="2" d="M600,340 H420 C380,340 360,400 300,400 H160"/>
+          <path class="chain__sector" data-sector="3" d="M160,400 A90,90 0 0 1 70,310 V190 A90,90 0 0 1 160,100"/>
+          <path class="chain__track chain__track--inner" d="M160,100 H600 A90,90 0 0 1 690,190 V250 A90,90 0 0 1 600,340 H420 C380,340 360,400 300,400 H160 A90,90 0 0 1 70,310 V190 A90,90 0 0 1 160,100 Z"/>
+          <path class="chain__dash" d="M160,100 H600 A90,90 0 0 1 690,190 V250 A90,90 0 0 1 600,340 H420 C380,340 360,400 300,400 H160 A90,90 0 0 1 70,310 V190 A90,90 0 0 1 160,100 Z"/>
+          <!-- ligne de départ -->
+          <g transform="translate(150,84)"><rect width="8" height="8" fill="#fff"/><rect x="8" y="8" width="8" height="8" fill="#fff"/><rect y="16" width="8" height="8" fill="#fff"/><rect x="8" y="24" width="8" height="8" fill="#fff"/><rect x="8" width="8" height="8" fill="#222"/><rect y="8" width="8" height="8" fill="#222"/><rect x="8" y="16" width="8" height="8" fill="#222"/><rect y="24" width="8" height="8" fill="#222"/></g>
+          <text class="chain__label" data-label="0" x="380" y="66" text-anchor="middle">Construire <tspan class="small" dy="0">S1</tspan></text>
+          <text class="chain__label" data-label="1" x="752" y="228" text-anchor="middle" transform="rotate(90 752 228)">Distribuer <tspan class="small">S2</tspan></text>
+          <text class="chain__label" data-label="2" x="380" y="470" text-anchor="middle">Accompagner <tspan class="small">S3</tspan></text>
+          <text class="chain__label" data-label="3" x="10" y="250" text-anchor="middle" transform="rotate(-90 10 250)">Animer <tspan class="small">S4</tspan></text>
+          <text class="chain__center" x="380" y="232" text-anchor="middle" font-size="58">SODIKART</text>
+          <text x="380" y="262" text-anchor="middle" font-family="Saira" font-size="12" letter-spacing="3" fill="#8f8f9a">4 MÉTIERS · 1 CHAÎNE DE VALEUR</text>
+          <text x="380" y="300" text-anchor="middle" font-family="Saira Extra Condensed" font-weight="800" font-size="30" fill="#ff5220" id="chain-sector-label">S1 · CONSTRUIRE</text>
+          <g class="chain__kart" id="chain-kart" style='offset-path:path("M160,100 H600 A90,90 0 0 1 690,190 V250 A90,90 0 0 1 600,340 H420 C380,340 360,400 300,400 H160 A90,90 0 0 1 70,310 V190 A90,90 0 0 1 160,100 Z")' filter="url(#glow)">
+            <rect x="-14" y="-7" width="28" height="14" rx="4" fill="#ff5220"/><rect x="-12" y="-11" width="7" height="4" rx="1" fill="#111"/><rect x="5" y="-11" width="7" height="4" rx="1" fill="#111"/><rect x="-12" y="7" width="7" height="4" rx="1" fill="#111"/><rect x="5" y="7" width="7" height="4" rx="1" fill="#111"/><circle cx="2" cy="0" r="3" fill="#fff"/>
+          </g>
+        </svg>
+      </div>
+      <div class="chain__panels" id="chain-panels" data-reveal="right">
+        <div class="chain__panel is-active" data-panel="0"><h4 class="h4">Construire <span>Secteur 1</span></h4><p>Karts de location SODI, châssis SODI Racing, moteur électrique ENGEC, occasion reconditionnée Sodi Restart. Des brevets maison et des karts crash-testés UTAC, fabriqués à Saint-Herblain.</p><div class="chips"><span class="chip chip--orange">SR6</span><span class="chip chip--teal">RSX2</span><span class="chip">Sigma KZ</span><span class="chip">ENGEC</span><span class="chip">Sodi Restart</span></div></div>
+        <div class="chain__panel" data-panel="1"><h4 class="h4">Distribuer <span>Secteur 2</span></h4><p>ITAKAshop, 1<sup>er</sup> site européen de vente en ligne de karts : 10 000 références en stock. Marques maison BOX'S, TEKNEEX, MEKAONE. Importateur exclusif Rotax en France depuis 1988, 84 points de vente dans 46 pays.</p><div class="chips"><span class="chip">ITAKAshop</span><span class="chip">BOX'S</span><span class="chip">TEKNEEX</span><span class="chip">MEKAONE</span><span class="chip chip--orange">Rotax France</span></div></div>
+        <div class="chain__panel" data-panel="2"><h4 class="h4">Accompagner <span>Secteur 3</span></h4><p>Projets clés en main en 15 étapes, service client J+1 dans le monde entier, Flying Doctors, formations et audits sur piste, plateformes My Sodi et Sodiconnect.</p><div class="chips"><span class="chip chip--orange">J+1 monde</span><span class="chip">Flying Doctors</span><span class="chip">My Sodi</span><span class="chip">Sodiconnect</span></div></div>
+        <div class="chain__panel" data-panel="3"><h4 class="h4">Animer <span>Secteur 4</span></h4><p>Sodi World Series, le plus grand classement de karting loisir au monde ; 3MK Events, NSK, Challenge Rotax France ; Sodi Racing Team, champion du monde KZ.</p><div class="chips"><span class="chip chip--orange">SWS</span><span class="chip">3MK Events</span><span class="chip">NSK</span><span class="chip">Sodi Racing Team</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGIES ============ -->
+<section class="section" id="technologies">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>03</b> — Technologies &amp; sécurité</div><h2 class="h2">Un outil de production.<br>Conçu comme <span class="u-orange">une voiture.</span></h2></div>
+      <div><p class="lead">Bureau d'études intégré, méthodes issues de l'industrie automobile, 82 technologies documentées : chaque kart sort de l'usine avec sa fiche identitaire. Survolez le SR6, le kart nouvelle génération.</p>
+      <div class="mt-2 badge-utac"><img src="assets/img/photos/innov-utac.webp" alt="UTAC"><span>Premier constructeur au monde à crash-tester ses karts</span></div></div>
+    </div>
+    <div class="tech" id="tech">
+      <div class="tech__stage" data-reveal="scale">
+        <div class="tech__glow"></div><div class="tech__floor"></div>
+        <div class="tech__kart" id="tech-kart"><img src="assets/img/karts/sr6.webp" alt="SODI SR6 vue 3/4"></div>
+        <div class="tech__reflection"><img src="assets/img/karts/sr6.webp" alt="" aria-hidden="true"></div>
+        <button class="hotspot is-active" style="left:60%;top:36%" data-hs="0" aria-label="ERGOMAX"><span class="hotspot__dot"></span><span class="hotspot__label">ERGOMAX®</span></button>
+        <button class="hotspot" style="left:88%;top:48%" data-hs="1" aria-label="HEAD SYSTEM"><span class="hotspot__dot"></span><span class="hotspot__label">HEAD SYSTEM®</span></button>
+        <button class="hotspot hotspot--left" style="left:18%;top:66%" data-hs="2" aria-label="PROLINE 360"><span class="hotspot__dot"></span><span class="hotspot__label">PROLINE® 360</span></button>
+        <button class="hotspot hotspot--left" style="left:47%;top:27%" data-hs="3" aria-label="EASY DRIVE"><span class="hotspot__dot"></span><span class="hotspot__label">EASY DRIVE®</span></button>
+        <button class="hotspot" style="left:74%;top:60%" data-hs="4" aria-label="Honda GX"><span class="hotspot__dot"></span><span class="hotspot__label">Honda GX · EMS</span></button>
+        <button class="hotspot hotspot--left" style="left:40%;top:44%" data-hs="5" aria-label="R-Display"><span class="hotspot__dot"></span><span class="hotspot__label">R-Display · Game of Karts</span></button>
+      </div>
+      <div data-reveal="right">
+        <div class="tech__cards" id="tech-cards">
+          <div class="tech__card is-active"><span class="hud">01 · Ergonomie brevetée</span><h3 class="h3">ERGOMAX® : un seul kart pour tous vos clients</h3><p>Siège et pédalier réglables en quelques secondes : un même SR6 accueille les pilotes de 1,40 m à 2,10 m. Plus de clients par piste, moins de karts immobilisés.</p><div class="proof"><div><b>1,40–2,10 m</b><span>Un kart, tous les gabarits</span></div><div><b>2 021 mm</b><span>Longueur · 1 420 mm de large</span></div></div></div>
+          <div class="tech__card"><span class="hud">02 · Sécurité · brevet 2009</span><h3 class="h3">HEAD SYSTEM® : la protection arrière qui absorbe</h3><p>Le système anti-chevauchement empêche un kart de monter sur un autre lors d'un contact. Conçu pour le choc, validé par les crash-tests UTAC, une première mondiale.</p><div class="proof"><div><b>2009</b><span>Brevet HEAD SYSTEM®</span></div><div><b>UTAC</b><span>Crash-tests certifiés</span></div></div></div>
+          <div class="tech__card"><span class="hud">03 · Carrosserie intégrale</span><h3 class="h3">PROLINE® 360 : enveloppé, pas exposé</h3><p>Protections périphériques et nez type F1 : le pilote est enveloppé, les barrières préservées, l'entretien réduit. Conforme NF EN 16230-1 et aux règles techniques FFSA.</p><div class="proof"><div><b>NF EN 16230-1</b><span>Norme karts de location</span></div><div><b>2006/42/CE</b><span>Directive machines</span></div></div></div>
+          <div class="tech__card"><span class="hud">04 · Direction</span><h3 class="h3">EASY DRIVE® : précis au volant, sans effort</h3><p>Une géométrie de direction qui réduit l'effort au volant tout en gardant le ressenti compétition. Accessible dès les premiers tours, exigeant au dernier.</p><div class="proof"><div><b>Proflex</b><span>Châssis ajustable Sport</span></div><div><b>4 pistons</b><span>Frein hydraulique</span></div></div></div>
+          <div class="tech__card"><span class="hud">05 · Rentabilité</span><h3 class="h3">Honda GX et EMS : des karts égaux, des clients fidèles</h3><p>Moteurs Honda GX200, GX270 ou GX390 4 temps réputés fiables, versions GPL, compteurs d'heures. L'EMS garantit l'équité des karts : moins de réclamations, plus de reconduites.</p><div class="proof"><div><b>3</b><span>Motorisations Honda</span></div><div><b>157–172 kg</b><span>Poids selon moteur</span></div></div></div>
+          <div class="tech__card"><span class="hud">06 · Expérience</span><h3 class="h3">R-Display &amp; Game of Karts : un jeu vidéo de course, pour de vrai</h3><p>Écran embarqué, bonus, classement en direct : l'expérience qui fait revenir. Configurateur My Studio : plus d'un million de combinaisons de couleurs pour une flotte à vos couleurs.</p><div class="proof"><div><b>1 M+</b><span>Combinaisons My Studio</span></div><div><b>SWS</b><span>Classement mondial intégré</span></div></div></div>
+        </div>
+        <div class="tech__nav" id="tech-nav"><button class="is-active" data-go="0">Ergomax</button><button data-go="1">Head System</button><button data-go="2">Proline</button><button data-go="3">Easy Drive</button><button data-go="4">Honda GX · EMS</button><button data-go="5">R-Display</button></div>
+        <div class="btn-row mt-3"><a href="karts-location.html#technologies" class="btn btn--ghost">Les 82 technologies</a><a href="karts-location.html#sr6" class="link">Fiche SR6 <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉLECTRIQUE ============ -->
+<section class="section section--teal" id="electrique">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>04</b> — La référence des karts électriques</div><h2 class="h2">L'électrique,<br>maîtrisé <span class="u-teal">depuis 2006.</span></h2></div>
+      <p class="lead">Moteur ENGEC conçu en interne, premier kart électrique Sodi dès 2011, RSX2 aujourd'hui référence des circuits indoor : chez Sodikart, l'électrique n'est pas une option du catalogue, c'est vingt ans d'expertise.</p>
+    </div>
+    <div class="elec">
+      <div class="elec__stage" data-reveal="left"><img src="assets/img/karts/rsx2.webp" alt="SODI RSX2 électrique"></div>
+      <div data-reveal="right">
+        <div class="flex wrap" style="gap:32px;align-items:center">
+          <div class="gauge" id="gauge"><svg viewBox="0 0 200 120"><path class="gauge__bg" d="M20,110 A80,80 0 0 1 180,110"/><path class="gauge__val" id="gauge-val" pathLength="1" d="M20,110 A80,80 0 0 1 180,110"/></svg><div class="gauge__txt"><b>≈1<small>h</small></b><span>d'autonomie · RSX2</span></div></div>
+          <div style="flex:1;min-width:220px"><p class="body-l">Moteur synchrone issu de l'industrie automobile, batterie lithium, charge &amp; verrouillage sécurisés, supervision de flotte SODISCAN. Une heure de piste par charge, un coût à l'heure maîtrisé.</p><div class="chips mt-2"><span class="chip chip--teal">RSX2 · adulte</span><span class="chip chip--teal">LRX2 · junior</span><span class="chip chip--teal">X2Drive · biplace</span><span class="chip chip--teal">KidRacer · 3-6 ans</span></div></div>
+        </div>
+        <div class="elec__stats" data-stagger=".08">
+          <div><b>2006</b><span>Début de la R&amp;D électrique</span></div>
+          <div><b>2011</b><span>Premier kart électrique Sodi</span></div>
+          <div><b>186<em>kg</em></b><span>RSX2 · moteur ENGEC</span></div>
+        </div>
+        <div class="sodiscan" id="sodiscan">
+          <div class="sodiscan__head"><span><i></i>SODISCAN · supervision de flotte</span><span>Piste 1 · en direct</span></div>
+          <div class="sodiscan__row"><span>K 01</span><div class="sodiscan__bar"><i data-w="92"></i></div><span>92 %</span></div>
+          <div class="sodiscan__row"><span>K 02</span><div class="sodiscan__bar"><i data-w="78"></i></div><span>78 %</span></div>
+          <div class="sodiscan__row"><span>K 03</span><div class="sodiscan__bar"><i data-w="64"></i></div><span>64 %</span></div>
+          <div class="sodiscan__row is-charging"><span>K 04</span><div class="sodiscan__bar"><i data-w="31"></i></div><span>charge</span></div>
+          <div class="sodiscan__row"><span>K 05</span><div class="sodiscan__bar"><i data-w="88"></i></div><span>88 %</span></div>
+        </div>
+        <div class="btn-row mt-3"><a href="karts-location.html#electrique" class="btn btn--teal">Découvrir la gamme électrique <svg class="btn__arrow"><use href="#i-arrow"/></svg></a><span class="hud">E-Finals SWS 2026 · Alcamo · 138 pilotes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAMME 2026 ============ -->
+<section class="section section--paper range" id="gamme" style="padding-bottom:0">
+  <div class="container range__head">
+    <div class="sec-head" data-reveal="up" style="margin-bottom:28px">
+      <div><div class="sec-num"><b>05</b> — Gamme 2026</div><h2 class="h2">Seize karts.<br>Une seule <span class="u-orange">signature.</span></h2></div>
+      <p class="lead">Onze karts de location réservés aux professionnels, cinq châssis de compétition homologués CIK-FIA. Du KidRacer de 3 ans au Sigma KZ champion du monde.</p>
+    </div>
+    <div class="filters" data-filters=".kart-card[data-tags]"><button class="filter is-active" data-filter="all">Tous</button><button class="filter" data-filter="electrique">Électrique</button><button class="filter" data-filter="thermique">Thermique</button><button class="filter" data-filter="juniors">Juniors &amp; kids</button><button class="filter" data-filter="biplaces">Biplaces</button><button class="filter" data-filter="competition">Compétition</button></div>
+  </div>
+  <div class="range__pin" id="range-pin">
+    <div class="range__track" id="range-track">
+      <a class="kart-card" href="karts-location.html#sr6" data-tags="thermique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · Nouvelle génération</span><span class="tag tag--orange">2026</span></div><div class="kart-card__name">SR6<small>Le kart nouvelle génération</small></div><div class="kart-card__img"><img src="assets/img/karts/sr6.webp" alt="SODI SR6" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX200 · 270 · 390</div><div><b>Pilotes</b>1,40 m à 2,10 m</div><div><b>Usage</b>Indoor &amp; outdoor</div><div><b>Poids</b>157 à 172 kg</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--elec" href="karts-location.html#rsx2" data-tags="electrique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · 100 % électrique</span><span class="tag tag--teal">ENGEC</span></div><div class="kart-card__name">RSX2<small>La référence des karts électriques</small></div><div class="kart-card__img"><img src="assets/img/karts/rsx2.webp" alt="SODI RSX2" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>Synchrone lithium</div><div><b>Autonomie</b>≈ 1 h</div><div><b>Usage</b>Indoor · pistes électriques</div><div><b>Poids</b>186 kg</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#rt10" data-tags="thermique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · Prestige</span></div><div class="kart-card__name">RT10<small>Volant et nez type F1</small></div><div class="kart-card__img"><img src="assets/img/karts/rt10.webp" alt="SODI RT10" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX200 · 270 · 390</div><div><b>Pilotes</b>Adultes, amateurs à aguerris</div><div><b>Signature</b>Proslide®, pédalier 2D</div><div><b>Norme</b>NF EN 16230-1</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#sport" data-tags="thermique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · Performance</span></div><div class="kart-card__name">Sport<small>Sensations proches de la compétition</small></div><div class="kart-card__img"><img src="assets/img/karts/sport.webp" alt="SODI Sport" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX270/390, SwissAuto 250, Rotax 125</div><div><b>Pilotes</b>Pilotes en quête de sensations</div><div><b>Signature</b>Proflex, frein 4 pistons</div><div><b>Motorisations</b>5</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#sr5" data-tags="thermique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · Sport</span></div><div class="kart-card__name">SR5<small>Plancher intégral, rapport qualité-prix</small></div><div class="kart-card__img"><img src="assets/img/karts/sr5.webp" alt="SODI SR5" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX, versions GPL</div><div><b>Pilotes</b>Adultes</div><div><b>Signature</b>EMS, pédalier 3 positions</div><div><b>Usage</b>Indoor &amp; outdoor</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#sr4" data-tags="thermique adultes"><div class="kart-card__top"><span class="kart-card__seg">Location · Sport</span></div><div class="kart-card__name">SR4<small>Fiabilité et simplicité</small></div><div class="kart-card__img"><img src="assets/img/karts/sr4.webp" alt="SODI SR4" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX, versions GPL</div><div><b>Pilotes</b>Adultes</div><div><b>Signature</b>EMS</div><div><b>Usage</b>Indoor &amp; outdoor</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#lr6" data-tags="thermique juniors"><div class="kart-card__top"><span class="kart-card__seg">Location · Junior</span></div><div class="kart-card__name">LR6<small>Junior thermique, 7 à 15 ans</small></div><div class="kart-card__img"><img src="assets/img/karts/lr6.webp" alt="SODI LR6" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Honda GX160 · 200</div><div><b>Pilotes</b>7 à 15 ans</div><div><b>Signature</b>Proline 360, Head System</div><div><b>Option</b>Écran Game of Karts</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--elec" href="karts-location.html#lrx2" data-tags="electrique juniors"><div class="kart-card__top"><span class="kart-card__seg">Location · Junior électrique</span><span class="tag tag--teal">ENGEC</span></div><div class="kart-card__name">LRX2<small>Junior 100 % électrique</small></div><div class="kart-card__img"><img src="assets/img/karts/lrx2.webp" alt="SODI LRX2" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>ENGEC brushless lithium</div><div><b>Pilotes</b>7 à 15 ans</div><div><b>Signature</b>Proline 360, Head System</div><div><b>Événement</b>E-Finals SWS</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--elec" href="karts-location.html#kidracer" data-tags="electrique juniors"><div class="kart-card__top"><span class="kart-card__seg">Location · Baby électrique</span><span class="tag tag--teal">3-6 ans</span></div><div class="kart-card__name">KidRacer<small>Une journée sans recharge</small></div><div class="kart-card__img"><img src="assets/img/karts/kidracer.webp" alt="SODI KidRacer" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>ENGEC 600 W · 24 V</div><div><b>Pilotes</b>3 à 6 ans</div><div><b>Signature</b>Driving School, bouton parent</div><div><b>Exploitation</b>Sans personnel dédié</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card" href="karts-location.html#2drive" data-tags="thermique biplaces"><div class="kart-card__top"><span class="kart-card__seg">Location · Biplace</span></div><div class="kart-card__name">2Drive<small>Familles, enfants, PMR</small></div><div class="kart-card__img"><img src="assets/img/karts/2drive.webp" alt="SODI 2Drive" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>Honda GX390</div><div><b>Places</b>2 · volant passager breveté</div><div><b>Signature</b>Ceinture, 2 positions</div><div><b>Usage</b>Apprentissage, PMR</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--elec" href="karts-location.html#x2drive" data-tags="electrique biplaces"><div class="kart-card__top"><span class="kart-card__seg">Location · Biplace électrique</span><span class="tag tag--teal">ENGEC</span></div><div class="kart-card__name">X2Drive<small>Biplace 100 % électrique</small></div><div class="kart-card__img"><img src="assets/img/karts/x2drive.webp" alt="SODI X2Drive" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>ENGEC lithium</div><div><b>Places</b>2 · volant passager breveté</div><div><b>Signature</b>SODISCAN, Easy Drive</div><div><b>Usage</b>Familles, PMR, indoor</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; devis <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--race" href="competition.html#sigma-kz" data-tags="competition"><div class="kart-card__top"><span class="kart-card__seg" style="color:#ff7a4d">SODI Racing · KZ / KZ2</span><span class="tag tag--orange">Champion du monde</span></div><div class="kart-card__name">Sigma KZ<small>Le kart ultime · 2026</small></div><div class="kart-card__img"><img src="assets/img/karts/sigma-kz.webp" alt="SODI Sigma KZ" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>TM KZ10 C · TM KZ-R1</div><div><b>Palmarès</b>FIA KZ 2024 &amp; 2025</div><div><b>Développé par</b>Sodi Racing Team</div><div><b>Homologation</b>CIK-FIA</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; revendeurs <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--race" href="competition.html#sigma-rs3" data-tags="competition"><div class="kart-card__top"><span class="kart-card__seg" style="color:#ff7a4d">SODI Racing · Rotax Max, X30, OK</span></div><div class="kart-card__name">Sigma RS3<small>Châssis officiel des Rotax Grand Finals</small></div><div class="kart-card__img"><img src="assets/img/karts/sigma-rs3.webp" alt="SODI Sigma RS3" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Rotax 125 Junior/Max, IAME X30</div><div><b>Référence</b>74 unités · Bahreïn 2025</div><div><b>Freins</b>Hydrauliques</div><div><b>Homologation</b>CIK-FIA</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; revendeurs <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--race" href="competition.html#sigma-dd2" data-tags="competition"><div class="kart-card__top"><span class="kart-card__seg" style="color:#ff7a4d">SODI Racing · Rotax DD2</span></div><div class="kart-card__name">Sigma DD2<small>Freins avant et arrière 4 pistons</small></div><div class="kart-card__img"><img src="assets/img/karts/sigma-dd2.webp" alt="SODI Sigma DD2" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>Rotax 125 DD2 Evo</div><div><b>Catégorie</b>DD2 · DD2 Masters</div><div><b>Freins</b>AV + AR 4 pistons</div><div><b>Homologation</b>CIK-FIA</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; revendeurs <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--race" href="competition.html#furia" data-tags="competition juniors"><div class="kart-card__top"><span class="kart-card__seg" style="color:#ff7a4d">SODI Racing · Mini</span></div><div class="kart-card__name">Furia 950<small>La nouvelle arme des jeunes champions</small></div><div class="kart-card__img"><img src="assets/img/karts/furia.webp" alt="SODI Furia 950" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteurs</b>Rotax Mini Max, IAME Gazelle</div><div><b>Pilotes</b>Minime 7-11 · Cadet 10-13</div><div><b>Homologation</b>FFSA</div><div><b>Millésime</b>2026</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; revendeurs <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="kart-card kart-card--race" href="competition.html#nova" data-tags="competition juniors"><div class="kart-card__top"><span class="kart-card__seg" style="color:#ff7a4d">SODI Racing · Baby</span></div><div class="kart-card__name">Nova<small>Initiation dès 4 ans</small></div><div class="kart-card__img"><img src="assets/img/karts/nova.webp" alt="SODI Nova" loading="lazy"></div><div class="kart-card__specs"><div><b>Moteur</b>Honda GX35</div><div><b>Pilotes</b>Dès 4 ans</div><div><b>Châssis</b>Tubes Ø25</div><div><b>Livraison</b>Prêt à rouler</div></div><div class="kart-card__cta"><span class="link">Fiche &amp; revendeurs <svg><use href="#i-arrow"/></svg></span></div></a>
+      <div class="range__end"><span class="hud" style="color:#7a7a85">Outils</span><h3 class="h3">Comparez, configurez, chiffrez.</h3><p style="color:#4a4a54;font-size:.95rem">Jusqu'à 3 karts côte à côte, plus d'un million de combinaisons de couleurs avec My Studio, puis un devis pré-rempli.</p><a href="karts-location.html#comparateur" class="btn btn--ink btn--sm">Comparateur</a><a href="karts-location.html#mystudio" class="btn btn--ghost btn--sm">My Studio</a></div>
+    </div>
+    <div class="range__progress"><i id="range-progress"></i></div>
+    <div class="range__hint">Faites défiler · la gamme avance</div>
+  </div>
+</section>
+
+<!-- ============ COMPÉTITION ============ -->
+<section class="section racing" id="competition">
+  <div class="container">
+    <div class="racing__grid">
+      <div data-reveal="left">
+        <div class="screen">
+          <div class="screen__hud"><span><i></i>Sodi Racing Team</span><span>Champion du monde · 2025</span></div>
+          <video src="assets/video/srt-celebration.mp4" poster="assets/video/srt-poster.webp" autoplay muted loop playsinline></video>
+          <div class="screen__cap"><b>Titre mondial<br>FIA KZ</b><span>Monoposto, Italie</span></div>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <div class="sec-num"><b>06</b> — SODI Racing · Sodi Racing Team</div>
+        <div class="titles">
+          <h2 class="h2">Champion<br>du monde<br><span class="u-orange">FIA KZ.</span></h2>
+          <div class="titles__x">×2</div>
+          <svg class="titles__laurel" viewBox="0 0 120 120" aria-hidden="true"><g fill="currentColor" transform="translate(60,96)"><g transform="rotate(-165)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-150)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-135)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-120)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-105)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-90)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-75)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-60)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-45)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-30)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g><g transform="rotate(-15)"><ellipse cx="46" cy="0" rx="10" ry="3.6"/><ellipse cx="38" cy="0" rx="7" ry="2.6" opacity=".6"/></g></g><path d="M14 96 A46 46 0 0 1 106 96" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".45"/><text x="60" y="84" text-anchor="middle" font-family="Saira Extra Condensed" font-weight="800" font-size="30" fill="currentColor">KZ</text></svg>
+        </div>
+        <p class="lead mt-2">2024 avec Giuseppe Palomba, 2025 avec Senna Van Walstijn : deux titres mondiaux consécutifs en KZ, la catégorie reine. La compétition est la vitrine technologique de la location : ce qui gagne le dimanche équipe vos pistes le lundi.</p>
+        <ul class="palmares" data-stagger=".07">
+          <li class="palmares__item"><span class="palmares__year">2025</span><span class="palmares__title">Champion du monde FIA KZ<small>Senna Van Walstijn · Sigma KZ · Sodi Racing Team</small></span><span class="palmares__tag">Titre mondial</span></li>
+          <li class="palmares__item"><span class="palmares__year">2025</span><span class="palmares__title">Coupe du monde FIA KZ2<small>Maksim Orlov · Sigma KZ</small></span><span class="palmares__tag">Coupe du monde</span></li>
+          <li class="palmares__item"><span class="palmares__year">2026</span><span class="palmares__title">Champion FIA Karting par équipes KZ2<small>CPB Sport, deuxième titre consécutif, devant Tony Kart</small></span><span class="palmares__tag palmares__tag--ghost">Équipes</span></li>
+          <li class="palmares__item"><span class="palmares__year">2024</span><span class="palmares__title">Champion du monde FIA KZ<small>Giuseppe Palomba · Sigma KZ</small></span><span class="palmares__tag">Titre mondial</span></li>
+          <li class="palmares__item"><span class="palmares__year">2010</span><span class="palmares__title">Châssis officiel des Rotax Max Challenge Grand Finals<small>Chaque année depuis 2010 · ~400 pilotes de 60 pays · 74 Sigma RS3 livrés à Bahreïn en 2025</small></span><span class="palmares__tag palmares__tag--ghost">Depuis 2010</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kz-strip" data-reveal="up">
+      <img src="assets/img/karts/sigma-kz.webp" alt="SODI Sigma KZ 2026">
+      <div><span class="eyebrow">Sigma KZ 2026</span><h3 class="h3 mt-1">Le kart ultime.<br><span class="outline-text">Développé par ceux qui gagnent.</span></h3><p class="body-l mt-2">Châssis KZ / KZ2 homologué CIK-FIA, moteurs TM KZ10 C ou KZ-R1, développé et validé en course par le Sodi Racing Team. Ligne complète du baby-kart Nova au Sigma KZ, pièces TEKNEEX, équipement BOX'S, moteurs Rotax France.</p><div class="btn-row mt-3"><a href="competition.html" class="btn btn--primary">La gamme compétition <svg class="btn__arrow"><use href="#i-arrow"/></svg></a><a href="competition.html#revendeurs" class="link">Trouver un revendeur racing <svg><use href="#i-arrow"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MONDE ============ -->
+<section class="section globe" id="monde">
+  <div class="container">
+    <div class="globe__grid">
+      <div class="globe__stage" id="globe-stage" data-reveal="scale"><div class="globe__ring"><span></span></div><div class="globe__legend"><span><i style="background:#fff"></i>Siège &amp; usine</span><span><i style="background:#ff5220"></i>Implantations</span><span><i style="background:#ffb59e"></i>Revendeurs</span><span><i style="background:#3ab8b8"></i>Pistes SWS</span></div></div>
+      <div data-reveal="right">
+        <div class="sec-num"><b>07</b> — Rayonnement international</div>
+        <h2 class="h2">Le karting mondial<br>roule <span class="u-orange">SODI.</span></h2>
+        <p class="lead mt-2">84 points de vente dans 46 pays, 6 implantations propres, 760 pistes partenaires Sodi World Series dans plus de 70 pays. Du Mans à Bangkok, de la Floride à Melbourne : un industriel nantais devenu le standard mondial.</p>
+        <div class="globe__toggle" id="globe-toggle"><button class="is-active" data-mode="network">Réseau commercial</button><button data-mode="sws">Pistes SWS</button></div>
+        <div class="globe__stats" data-stagger=".08">
+          <div><b><span data-count="46">0</span></b><span>pays · réseau de revendeurs</span></div>
+          <div><b><span data-count="84">0</span></b><span>points de vente dans le monde</span></div>
+          <div><b><span data-count="6">0</span></b><span>implantations propres hors France</span></div>
+          <div><b><span data-count="5">0</span></b><span>continents · priorité Amérique du Nord</span></div>
+        </div>
+        <ul class="sites">
+          <li><i class="hq"></i>Saint-Herblain, France<span>Siège · usine</span></li><li><i></i>SODI USA · Floride<span>Amériques</span></li><li><i></i>Sodi Racing USA · Floride<span>Racing</span></li><li><i></i>SODIKART LATAM · Mexique<span>Amériques</span></li><li><i></i>SODI UK<span>Europe</span></li><li><i></i>SODIKART ASEAN · Bangkok<span>Asie</span></li><li><i></i>Bureau de Dubaï<span>Moyen-Orient</span></li><li><i></i>SODI Australasia<span>Océanie</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SWS ============ -->
+<section class="section sws" id="communaute">
+  <div class="sws__bg"><img src="assets/img/sws/bg-plan.webp" alt="" aria-hidden="true" data-parallax="8"></div>
+  <div class="container">
+    <div class="sws__grid">
+      <div data-reveal="left">
+        <img class="sws__logo" src="assets/logo/sws.png" alt="Sodi World Series">
+        <div class="sec-num"><b>08</b> — Communauté</div>
+        <h2 class="h2">Roulez, classez-vous,<br><span class="u-orange">qualifiez-vous.</span></h2>
+        <p class="lead mt-2">Les Sodi World Series : le plus grand classement de karting loisir au monde, gratuit, ouvert dès 7 ans. 20 000 épreuves par an sur des karts SODI, 50 courses par jour, et 16 places qualificatives pour les Rotax Grand Finals. C'est le lien entre vos karts et vos clients : ils reviennent pour grimper au classement.</p>
+        <div class="bignums" data-stagger=".08">
+          <div><b><span data-count="150000">0</span><em>+</em></b><span>pilotes classés</span></div>
+          <div><b><span data-count="760">0</span></b><span>pistes · 55 nouvelles en 2025</span></div>
+          <div><b><span data-count="20000">0</span></b><span>épreuves par an</span></div>
+          <div><b><span data-count="47">0</span></b><span>nations · finale 2026 au Mans</span></div>
+        </div>
+        <div class="btn-row mt-3"><a href="communaute.html#trouver" class="btn btn--primary">Trouver une piste SWS <svg class="btn__arrow"><use href="#i-arrow"/></svg></a><a href="communaute.html#finales" class="link">Finale 2026 · Le Mans · première course de 24 h <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="ticker" id="ticker" data-reveal="right">
+        <div class="ticker__head"><span><i></i>Classement en direct · Sprint Cup</span><span class="u-muted">Démo · mise à jour 50 courses / jour</span></div>
+        <div class="ticker__row"><span class="ticker__pos">1</span><span class="ticker__name">SLY 27<small>Piste du Mans · FR</small></span><span class="ticker__flag">FR</span><span class="ticker__time" data-t="36.366">36.366</span></div>
+        <div class="ticker__row"><span class="ticker__pos">2</span><span class="ticker__name">PIEPS74<small>Genk · BE</small></span><span class="ticker__flag">BE</span><span class="ticker__time" data-t="36.439">36.439</span></div>
+        <div class="ticker__row"><span class="ticker__pos">3</span><span class="ticker__name">BENZOUILLE<small>Campillos · ES</small></span><span class="ticker__flag">ES</span><span class="ticker__time" data-t="36.722">36.722</span></div>
+        <div class="ticker__row"><span class="ticker__pos">4</span><span class="ticker__name">MOUCHY<small>Alcamo · IT</small></span><span class="ticker__flag">IT</span><span class="ticker__time" data-t="37.742">37.742</span></div>
+        <div class="ticker__row"><span class="ticker__pos">5</span><span class="ticker__name">CEDKILLER<small>Payerne · CH</small></span><span class="ticker__flag">CH</span><span class="ticker__time" data-t="38.565">38.565</span></div>
+        <div class="ticker__foot"><span>Formats : Sprint · E-Sprint · Endurance · Junior · Kid · Women's · Master</span><span>Apex Timing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUVRIR UN CIRCUIT ============ -->
+<section class="section section--paper" id="ouvrir">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>09</b> — Ouvrir un circuit</div><h2 class="h2">De l'idée à l'ouverture,<br>en <span class="u-orange">15 étapes.</span></h2></div>
+      <p class="lead">Investisseur, franchisé, collectivité ou entrepreneur du loisir : un seul interlocuteur de la faisabilité à la première course. Surface dès 1 000 m², clientèle dès 8 ans, karts dès 3 ans.</p>
+    </div>
+    <div class="steps" id="steps">
+      <div class="steps__line"><i id="steps-progress"></i></div>
+      <div class="steps__grid">
+        <div class="step"><span class="step__num">01</span><span class="step__dot"></span><h4 class="h4">Étudier</h4><p>Valider le projet avant d'investir.</p><ul><li>Étude de faisabilité</li><li>Business plan &amp; financement</li><li>Choix du site, dès 1 000 m²</li></ul></div>
+        <div class="step"><span class="step__num">02</span><span class="step__dot"></span><h4 class="h4">Concevoir</h4><p>Un circuit pensé pour la rotation et la sécurité.</p><ul><li>Concept &amp; thématisation</li><li>Tracé de piste</li><li>Normes NF S52-002, EN 16230-1</li></ul></div>
+        <div class="step"><span class="step__num">03</span><span class="step__dot"></span><h4 class="h4">Équiper</h4><p>Tout le matériel, une seule livraison.</p><ul><li>Flotte SODI neuve ou Sodi Restart</li><li>Barrières &amp; revêtements</li><li>Chronométrage Apex Timing</li></ul></div>
+        <div class="step"><span class="step__num">04</span><span class="step__dot"></span><h4 class="h4">Lancer</h4><p>Des équipes formées, des pilotes dès le premier jour.</p><ul><li>Formation des équipes</li><li>EMS, SODISCAN, R-Display</li><li>Ouverture &amp; affiliation SWS</li></ul></div>
+        <div class="step"><span class="step__num">05</span><span class="step__dot"></span><h4 class="h4">Exploiter</h4><p>Rouler plus d'heures, dépenser moins.</p><ul><li>Service client J+1</li><li>Pièces ITAKAshop</li><li>Audits sur piste &amp; Game of Karts</li></ul></div>
+      </div>
+    </div>
+    <div class="invest" data-stagger=".08">
+      <div><b>265–745<em>k€</em></b><span>Investissement indoor type</span></div>
+      <div><b>80–250<em>k€</em></b><span>dont flotte de karts</span></div>
+      <div><b>1 000<em>m²</em></b><span>Surface minimale conseillée</span></div>
+      <div><b>46</b><span>pays accompagnés</span></div>
+    </div>
+    <div class="btn-row mt-3" data-reveal="up"><a href="solutions-circuits.html#guide" class="btn btn--ink">Télécharger le guide « Ouvrir un circuit »</a><a href="devis.html?profil=projet" class="btn btn--ghost">Prendre rendez-vous avec un expert</a><a href="solutions-circuits.html#simulateur" class="link" style="color:var(--ink)">Simulateur de rentabilité <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ SERVICE ============ -->
+<section class="section" id="service">
+  <div class="container">
+    <div class="sec-head" data-reveal="up">
+      <div><div class="sec-num"><b>10</b> — Service client</div><h2 class="h2">J+1,<br>partout <span class="u-orange">dans le monde.</span></h2></div>
+      <p class="lead">Un kart immobilisé est un kart qui ne rapporte pas. Experts par technologie, Flying Doctors, 10 000 pièces en stock et des plateformes pour piloter votre flotte : le service est inclus dans la promesse.</p>
+    </div>
+    <div class="svc-grid" data-stagger=".1">
+      <div class="svc"><div class="svc__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"/><path d="M24 10v14l9 5"/></svg></div><h4 class="h4">Intervention J+1</h4><p>Les Flying Doctors interviennent dans le monde entier dès le lendemain. Direction service client avec plus de 20 ans d'expérience.</p><b class="svc__kpi">J+1<small> monde entier</small></b></div>
+      <div class="svc"><div class="svc__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 36l10-10 6 6 16-16"/><path d="M30 16h10v10"/></svg></div><h4 class="h4">Experts par technologie</h4><p>Trois pôles dédiés : thermique, électrique et gaming. Formations, audits sur piste et certification de vos équipes.</p><b class="svc__kpi">3<small> pôles experts</small></b></div>
+      <div class="svc"><div class="svc__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 16l16-8 16 8v16l-16 8-16-8z"/><path d="M8 16l16 8 16-8M24 24v16"/></svg></div><h4 class="h4">Pièces &amp; équipements</h4><p>ITAKAshop, 1<sup>er</sup> site de vente en ligne de karts en Europe : 10 000 références, entrepôt de près de 10 000 m². BOX'S, TEKNEEX, MEKAONE.</p><b class="svc__kpi">10 000<small> références</small></b></div>
+      <div class="svc"><div class="svc__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="10" width="36" height="24" rx="3"/><path d="M16 40h16M24 34v6M12 22h8M12 28h14"/></svg></div><h4 class="h4">My Sodi &amp; Sodiconnect</h4><p>Suivi de flotte, commandes de pièces, documentation technique, médiathèque et formation en ligne dans un espace client unique.</p><b class="svc__kpi">24/7<small> espace client</small></b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTUALITÉS ============ -->
+<section class="section section--paper section--tight" id="actualites">
+  <div class="container">
+    <div class="sec-head" data-reveal="up" style="margin-bottom:40px">
+      <div><div class="sec-num"><b>11</b> — Actualités &amp; presse</div><h2 class="h2">Dernières <span class="u-orange">nouvelles</span> de la piste.</h2></div>
+      <a href="groupe.html#presse" class="link" style="color:var(--ink);justify-self:end">Tous les communiqués <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="news-grid" data-stagger=".1">
+      <a class="news-card" href="groupe.html#presse"><div class="news-card__img"><img src="assets/img/news/195-cpb.webp" alt="Karts SODI en course" loading="lazy"></div><div class="news-card__body"><div class="news-card__meta"><b>Compétition</b><span>2026</span></div><h4>CPB Sport champion FIA Karting par équipes en KZ2</h4><p>Deuxième titre consécutif pour le team partenaire sur châssis Sigma KZ, devant Tony Kart.</p><span class="link">Lire <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="news-card" href="groupe.html#presse"><div class="news-card__img"><img src="assets/img/news/194-kz2masters.webp" alt="Sigma KZ en course devant le public" loading="lazy"></div><div class="news-card__body"><div class="news-card__meta"><b>Compétition</b><span>2026</span></div><h4>KZ2 Masters International Super Cup : Anthony Abbasse champion</h4><p>Le pilote Sodi Racing Team s'impose au sommet de la catégorie Masters.</p><span class="link">Lire <svg><use href="#i-arrow"/></svg></span></div></a>
+      <a class="news-card" href="groupe.html#presse"><div class="news-card__img"><img src="assets/img/news/193-efinals.webp" alt="E-Finals SWS, karts électriques sur grille" loading="lazy"></div><div class="news-card__body"><div class="news-card__meta"><b>Sodi World Series</b><span>2026</span></div><h4>E-Finals SWS 2026 à Alcamo : 138 pilotes, 20 pays, 100 % électrique</h4><p>La finale électrique des Sodi World Series confirme l'essor des RSX2 et LRX2 sur les pistes indoor.</p><span class="link">Lire <svg><use href="#i-arrow"/></svg></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section cta-final" id="devis">
+  <div class="container">
+    <div data-reveal="left">
+      <span class="eyebrow">Devis en 3 étapes</span>
+      <h2 class="h2 mt-2">Parlons de<br>votre projet.</h2>
+      <p class="lead mt-2" style="color:#fff;opacity:.9">Trois questions, un expert dédié, une réponse sous 48 h ouvrées. Exploitant, porteur de projet, pilote ou revendeur : le bon interlocuteur, du premier appel.</p>
+      <div class="btn-row mt-3"><a href="devis.html" class="btn btn--white btn--lg">Demander un devis <svg class="btn__arrow"><use href="#i-arrow"/></svg></a><a href="devis.html?rappel=1" class="btn btn--ghost btn--lg" style="border-color:rgba(255,255,255,.6)">Être rappelé par un expert</a></div>
+    </div>
+    <div class="cta-steps" data-stagger=".1">
+      <div><b>1</b><span>Votre profil<small>Exploitant, porteur de projet, pilote, revendeur</small></span></div>
+      <div><b>2</b><span>Votre besoin<small>Flotte, création de circuit, châssis, pièces, service</small></span></div>
+      <div><b>3</b><span>Vos coordonnées<small>Un expert de votre zone vous rappelle</small></span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER:START -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div><img class="footer__logo" src="assets/logo/sodikart-logo-white.svg" alt="SODIKART"><p class="footer__addr"><b>SODIKART</b> · Premier constructeur mondial de karts<br>PA Pan Loup Cap · 21 rue José Soriano<br>44800 Saint-Herblain · France<br>Usine et siège depuis 2023 · fondé à Nantes en 1981</p></div>
+      <div><h5>Karts de location</h5><ul><li><a href="karts-location.html#sr6">SR6 nouvelle génération</a></li><li><a href="karts-location.html#electrique">Gamme électrique</a></li><li><a href="karts-location.html#juniors">Juniors &amp; kids</a></li><li><a href="karts-location.html#biplaces">Biplaces</a></li><li><a href="karts-location.html#restart">Occasion Sodi Restart</a></li><li><a href="karts-location.html#comparateur">Comparateur</a></li></ul></div>
+      <div><h5>Solutions circuits</h5><ul><li><a href="solutions-circuits.html#ouvrir">Ouvrir un circuit</a></li><li><a href="solutions-circuits.html#flotte">Équiper ma flotte</a></li><li><a href="solutions-circuits.html#pieces">Pièces &amp; équipements</a></li><li><a href="solutions-circuits.html#logiciels">Chronométrage &amp; logiciels</a></li><li><a href="solutions-circuits.html#service">Service client</a></li><li><a href="solutions-circuits.html#simulateur">Simulateur de rentabilité</a></li></ul></div>
+      <div><h5>Compétition &amp; communauté</h5><ul><li><a href="competition.html">Châssis SODI Racing 2026</a></li><li><a href="competition.html#srt">Sodi Racing Team</a></li><li><a href="competition.html#rotax">Rotax France</a></li><li><a href="competition.html#ecole">Sodi Racing School</a></li><li><a href="communaute.html">Sodi World Series</a></li><li><a href="communaute.html#trouver">Trouver un circuit</a></li></ul></div>
+      <div><h5>Groupe</h5><ul><li><a href="groupe.html#histoire">Histoire 1981-2026</a></li><li><a href="groupe.html#usine">Usine de Saint-Herblain</a></li><li><a href="groupe.html#rse">RSE en 5 chiffres</a></li><li><a href="groupe.html#presse">Presse</a></li><li><a href="groupe.html#carrieres">Carrières</a></li><li><a href="groupe.html#revendeur">Devenir revendeur</a></li><li><a href="devis.html">Contact &amp; devis</a></li></ul></div>
+    </div>
+    <div class="footer__brands"><span class="lbl">Les marques du groupe</span><span>SODI</span><span>SODI Racing</span><span>ITAKAshop</span><span>BOX'S</span><span>TEKNEEX</span><span>MEKAONE</span><span>3MK Events</span><span>Sodi World Series</span><span>Rotax France</span><span>Sodi Restart</span><span>Game of Karts</span></div>
+    <div class="footer__bottom">
+      <div class="footer__langs"><a href="#" class="is-active">FR</a><a href="#">EN</a><a href="#">DE</a><a href="#">ES</a><a href="#">IT</a><a href="#">中文</a><a href="#">繁體</a><a href="#">RU</a></div>
+      <div class="footer__social"><a href="https://www.instagram.com/sodikart.official/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://www.youtube.com/user/SodikartVideo" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8s-.2-1.6-.8-2.3c-.8-.8-1.6-.8-2-.9C16.4 4.6 12 4.6 12 4.6s-4.4 0-7.2.2c-.4.1-1.3.1-2 .9C2.2 6.4 2 8 2 8s-.2 1.9-.2 3.8v1.7c0 1.9.2 3.8.2 3.8s.2 1.6.8 2.3c.8.8 1.8.8 2.2.9 1.6.2 7 .2 7 .2s4.4 0 7.2-.2c.4-.1 1.3-.1 2-.9.6-.7.8-2.3.8-2.3s.2-1.9.2-3.8v-1.7C22.2 9.9 22 8 22 8zM10 15V9l5.5 3L10 15z"/></svg></a><a href="https://www.linkedin.com/company/sodikart" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.5h-3v11h3v-11zM5 4a1.8 1.8 0 1 0 0 3.6A1.8 1.8 0 0 0 5 4zm15.5 8.6c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5 1-2.9 1.6V8.5h-3v11h3v-6c0-1.6.3-3.1 2.3-3.1 1.9 0 1.9 1.8 1.9 3.2v5.9h3v-6.9z"/></svg></a><a href="https://www.facebook.com/Sodikart-163797470458546" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a></div>
+      <div class="footer__legal"><span>© <span data-year>2026</span> SODIKART · SAS au capital de 1 166 235 €</span><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER:END -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
+<script src="assets/js/land.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/globe.js"></script>
+</body>
+</html>
